@@ -1,0 +1,193 @@
+
+/* make a button */
+.div_button{
+   background-color: plum;
+   height: 100px;
+}
+
+button{
+border: none;
+width: 300px;
+height: 100px;
+color: white;
+background-color: plum;
+border-radius: 10px;
+box-shadow: rgb(236, 237, 238) 3px 3px 6px 0px inset, rgba(28, 24, 24, 0.684) -3px -3px 0 1px  inset;
+text-shadow: 2px 2px rgba(28, 24, 24, 0.684);
+border: none;
+
+}
+
+button:active{
+box-shadow: rgb(236, 237, 238) -3px -3px  6px 0px inset, rgba(28, 24, 24, 0.684)  3px 3px 6px 4px inset;
+;
+text-shadow: none;
+
+
+}
+
+/* make a card */
+
+.dog_div{
+    margin-top: 70px;
+    box-shadow: inset;
+    display: inline-block;
+    transition: 0.9s;
+    padding: 12px;
+    
+}
+
+.dog_pic{
+    width: 300px;
+    height: 300px;
+}
+
+.dog_p{
+    color: greenyellow;
+}
+
+.dog_div:hover{
+    box-shadow: 0 0 4px 3px rgb(116, 200, 116);
+    border-radius: 8px;
+    
+}
+
+.dog_pic:hover{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+/* make a colorful text */
+
+.colorful_text {
+    margin: 70px;
+    display: flex;
+    transition-timing-function: linear;
+}
+
+.t1{
+    animation: Text 2s infinite
+}
+
+    @keyframes Text {
+        0%{
+            color: blue;
+        }
+        50%{
+            color: rgb(255, 0, 0);
+        }
+        100%{
+            color: blue;
+        }
+    }
+.t2  { animation: Text 3s infinite }
+        
+        @keyframes Text {
+            0%{
+                color: blue;
+            }
+            50%{
+                color: rgb(255, 0, 0);
+            }
+            100%{
+                color: blue;
+            }
+            }
+        
+.t3 { 
+    animation: Text 4s infinite;
+}
+@keyframes TExt {
+    0%{
+        color: blue;
+    }
+    50%{
+        color: rgb(255, 0, 0);
+    }
+    100%{
+        color: blue;
+    }
+}
+.t4 {
+
+    animation: Text 5s infinite;
+}
+    @keyframes TEXT {
+        0%{
+            color: blue;
+        }
+        50%{
+            color: rgb(255, 0, 0);
+        }
+        100%{
+            color: blue;
+        }
+    }
+
+.t1,.t2,.t3,.t4 {
+    font-size: 50px;
+}
+
+
+/* make a spinner */
+.spinner {
+    border: 20px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 20px solid #dbc234;
+    border-bottom:20px solid green;
+    border-left: 20px solid green;
+    border-right:20px solid rgb(25, 0, 255);
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+
+    
+}
+
+.spinner:hover {
+    animation: spin paused;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* make a header */
+.header {
+    max-width: inherit;
+    width: inherit;
+    background-color: #5f9ea0;
+    position: absolute;
+    padding: 40px 250px 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    color: white;
+    column-gap: 60px;
+    text-shadow: rgb(10, 10, 10) 1px 1px 1px;
+    font-size: 24px;
+}
+
+.header ul li {
+    transition: 1s;
+}
+
+.header ul li:hover {
+    text-shadow: rgb(255, 255, 0) 0 0 50px;
+    transition: 1s;
+}
+
+/* მეტი ვერ მოვასწარი ;() */
