@@ -52,7 +52,7 @@ text-shadow: none;
     
 }
 
-.dog_pic:hover{
+.dog_div:hover .dog_pic {
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
@@ -131,14 +131,15 @@ text-shadow: none;
 
 /* make a spinner */
 .spinner {
+    position: absolute;
     border: 20px solid #f3f3f3;
     border-radius: 50%;
     border-top: 20px solid #dbc234;
-    border-bottom:20px solid green;
+    border-bottom: 20px solid green;
     border-left: 20px solid green;
-    border-right:20px solid rgb(25, 0, 255);
-    width: 150px;
-    height: 150px;
+    border-right: 20px solid rgb(25, 0, 255);
+    width: 100%;
+    height: 100%;
     animation: spin 2s linear infinite;
 
     
@@ -146,6 +147,15 @@ text-shadow: none;
 
 .spinner:hover {
     animation: spin paused;
+}
+
+.spinner_container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -190,4 +200,3 @@ text-shadow: none;
     transition: 1s;
 }
 
-/* მეტი ვერ მოვასწარი ;() */
